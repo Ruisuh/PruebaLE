@@ -1,0 +1,191 @@
+
+body {
+  background-color: #ffff;
+}
+
+h3 {
+  font-size: 17px;
+  width: auto;
+  padding: auto;
+  font-family: monospace;
+  color: navy;
+  position: relative;
+  text-align: left; /*alineación del texto*/
+  text-indent: 1px; /*sangría*/
+  display: block;
+
+}
+
+h4 {
+  font-family: cursive;
+  color: blue;
+}
+
+.botoncito {
+  padding: auto;
+  display: block;
+  width: 70px; /*ancho*/
+  height: 60px; /*alto*/
+  border-radius: 12px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.botoncito:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: 0.3s;
+}
+
+
+ .demonboy {
+ display: block;
+ max-width: 20%;
+ max-height: 20%;
+ padding: 10px;
+ cursor: auto;
+ float: left;
+
+/*animacion todo facha*/
+ animation-duration: 3s;
+ animation-name: sliein;
+ animation-direction: alternate;
+}
+
+
+ /*especificando que es la animacion slidein*/
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+ /*fino señores*/
+
+.HolaMundo {
+  font-size: 50px;
+   display: block;
+   width: 12ch;
+   font-family: monospace;
+   white-space: nowrap;
+   border-right: 4px solid;
+   animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+   overflow: hidden;
+}
+
+
+ @keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.estudio-de-mercado { /*texto*/
+  font-size: 24px;
+    display: block;
+    width: 30ch;
+    height: auto;
+    padding-left: 15px;
+}
+
+.estudio-de-mercado-imagen { /*imagen*/
+  display: block;
+  float: right;
+}
+
+.libertyexpresslogo { /*imagen*/
+  display: block;
+  width: 300px; /*ancho*/
+  height: 240px; /*alto*/
+  margin: 0 auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: visiblePainted;
+}
+
+.logo { /*pie de imagen*/
+  display: block;
+  width: 500px; /*ancho*/
+  height: 30px; /*alto*/
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1%;
+  max-width: 500px;
+  color: #d32f1d;
+  text-align: center;
+  padding: 1px 0 10px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial , Verdana, sans-serif;
+  font-weight: 300;
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: visiblePainted;
+}
+
+.container {
+  height: 50vh;
+  background-color: white;
+  margin: 5%;
+}
+
+.cajita, .cajita2, .cajita3, .cajita4 {
+  width: 200px; /*ancho*/
+  height: 250px; /*alto*/
+  padding: 20px;
+  margin-left: 45px;
+  margin-top: 3vh;
+  border-radius: 15%;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial , Verdana, sans-serif;
+}
+
+.hiperlinks {
+  text-decoration: none;
+  color: black;
+}
+
+.cajita {
+  background-color: #80cee1;
+  transition: transform .2s; /* Animation */
+}
+
+.cajita2 {
+  background-color: #77dd77;
+  transition: transform .2s; /* Animation */
+}
+
+.cajita3 {
+  background-color: #fdd;
+  transition: transform .2s; /* Animation */
+}
+
+.cajita4 {
+  background-color: #ffb480;
+  transition: transform .2s; /* Animation */
+}
+
+.cajita:hover, .cajita2:hover, .cajita3:hover, .cajita4:hover {
+  animation: zoom-in-zoom-out 1s ease infinite;
+  transform: scale(1.19); 
+  cursor: pointer;
+}
