@@ -159,6 +159,14 @@ h4 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial , Verdana, sans-serif;
 }
 
+.silvertext {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Light", Helvetica, Arial , Verdana, sans-serif;
+  font-size: 14px;
+}
+
 .hiperlinks {
   text-decoration: none;
   color: black;
